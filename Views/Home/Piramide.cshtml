@@ -4,12 +4,16 @@
 
     @for(int i = 0 ; i < Model ; i++)
     {
+        //variables
         @for(int espaciosEnBlanco = Model - i; espaciosEnBlanco > 1 ; espaciosEnBlanco--)
         {
-            <img style="float: left; padding: 25px; background-color: blue" />
+            // el color que le quieras poner al fondo
+            <img style="float: left; padding: 25px; background-color: #00F3FF" />
         }
+        // si cumple la condiccion
         @for(int bloques = 0; bloques <= i ; bloques++)
         {
+            //el diseño de la imagen del los cuadros
             <img  style="float: left;"src="~/images/bloque.webp" alt="#"/>
         }
 
